@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7957219-ad28-4404-8643-902f0042ae3b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Va3TVFWYVyoIsLZWOC33Flofpo" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react/github issues/githubissues" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\carbon footprinting" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.scratch_2.js">
+    <configuration name="scratch_1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.scratch_2.js" />
+        <item itemvalue="Node.js.scratch_1.js" />
+        <item itemvalue="Node.js.scratch.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7957219-ad28-4404-8643-902f0042ae3b" name="Default Changelist" comment="" />
+      <created>1577477386617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577477386617</updated>
+      <workItem from="1577477389615" duration="15330000" />
+      <workItem from="1577605033214" duration="26225000" />
+      <workItem from="1577713812016" duration="12868000" />
+      <workItem from="1577811116440" duration="9104000" />
+      <workItem from="1577886065110" duration="3335000" />
+      <workItem from="1577908347233" duration="3096000" />
+      <workItem from="1578289802120" duration="33548000" />
+      <workItem from="1578401384323" duration="16390000" />
+      <workItem from="1578499208644" duration="13884000" />
+      <workItem from="1578579750164" duration="1253000" />
+      <workItem from="1578660002302" duration="729000" />
+      <workItem from="1578777053894" duration="28485000" />
+      <workItem from="1578919733916" duration="21274000" />
+      <workItem from="1579002396834" duration="22780000" />
+      <workItem from="1579146357564" duration="3154000" />
+      <workItem from="1579177979484" duration="4313000" />
+      <workItem from="1579265894220" duration="688000" />
+      <workItem from="1579305465204" duration="3903000" />
+      <workItem from="1579409031667" duration="1637000" />
+      <workItem from="1579533342188" duration="583000" />
+      <workItem from="1579610371134" duration="1186000" />
+      <workItem from="1579683419155" duration="3975000" />
+      <workItem from="1579755257396" duration="1771000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-7" border='1px solid black' style="background-image: url('carbon.jpg');">
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel-group" style="padding-top: 12px;">
+                <div class="panel panel-primary" >
+                    <div class="panel-heading"><h1>Register Here</h1></div>
+                    <div class="panel-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <input type="text" placeholder="First Name" class="form-control" id="firstname">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="last Name" class="form-control" id="lastname">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="User Name" class="form-control" id="username">
+                            </div>
+                            <div class="form-group" id="gender">
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" value="Male" id="male" >Male
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" value="Female" id="female">Female
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Enter Password" class="form-control" id="password">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" onchange="document.getElementById('register_button').disabled = !this.checked;"> I agree to all the terms and conditions.</label>
+                            </div>
+                            <button type="button" id="register_button"  onclick="registration();" disabled=true class="btn btn-info">SignUp</button>
+                        </form>
+                        <p>Already have an account <a href="../login.html">Login</a> here</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

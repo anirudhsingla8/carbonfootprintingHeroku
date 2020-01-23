@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-4">
+            <button class="btn btn-secondary" onclick="window.location.href='add_card.html'">Add new Card</button>
+            <button class="btn btn-secondary" onclick="window.location.href='update_expense.html'">Update Expense</button>
+            <button class="btn btn-info" onclick="displayCards();">Fetch cards</button>
+            <button class="btn btn-info" onclick="fetchUserId();">Fetch user details</button>
+            <button class="btn btn-info" onclick="logOut();">LogOut</button>
+        </div>
+        <div class="col-md-4">
+            <div class="card-container" id="card-container"></div>
+        </div>
+        <div class="modal" id="myModal">
+            modal
+            <!--
+            <div class="modal-dialog" id="modal-dialog">
+                <div class="modal-content" id="modal-content">
+
+
+                    <div class="modal-header" id="modal-header">
+
+                    </div>
+
+                    <div class="modal-body" id="modal-body">
+                    </div>
+
+
+                    <div class="modal-footer" id="modal-footer">
+                    </div>
+
+                </div>
+            </div>
+            -->
+        </div>
+
+    </div>
+</body>
+</html>
