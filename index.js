@@ -25,8 +25,10 @@ app.use(session({
 }));
 
 const DB_URI = 'mongodb+srv://anirudh:rj13sl1608@cluster0-lcda6.mongodb.net/test?retryWrites=true&w=majority';
-const HOSTNAME = '127.0.0.1';
-const PORT = '8080';
+const port = process.env.PORT || 3000;
+
+//const HOSTNAME = '127.0.0.1';
+//const PORT = '8080';
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -46,8 +48,12 @@ mongodb.MongoClient.connect(DB_URI, (error, dbClient) => {
     console.log('successfully connected to database instance');
     const database = dbClient.db('carbon-footprinting');
     routes(app,database);
-    app.listen(PORT, HOSTNAME, () => {
-        console.log(`Server started at http://${HOSTNAME}:${PORT} ......`);
-    })
+    app.listen(port, () => {
+        console.log(`Server started at ${port}`);
+    });
+
+    // app.listen(PORT, HOSTNAME, () => {
+    //     console.log(`Server started at http://${HOSTNAME}:${PORT} ......`);
+    // })
 
 })

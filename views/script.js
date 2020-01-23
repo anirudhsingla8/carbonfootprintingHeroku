@@ -5,7 +5,7 @@ let host_url;
 async function fetchUserId(){
     let cookie = ''
     console.log(cookie);
-    let res = await fetch('http://127.0.0.1:8080/user/dashboard',
+    let res = await fetch('https://carbonfootprinting1608.herokuapp.com/user/dashboard',
         {redirect: 'follow',
             headers:{
                 "Cookie":cookie
@@ -19,14 +19,14 @@ async function fetchUserId(){
 
 async function logOut(){
 
-    fetch("http://127.0.0.1:8080/user/logout",{
+    fetch("https://carbonfootprinting1608.herokuapp.com/user/logout",{
         method: 'GET',
         redirect: 'follow'
     }).then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
 
-    window.location="login.html";
+    window.location="https://carbonfootprinting1608.herokuapp.com/login.html";
 }
 
 async function registration() {
@@ -50,7 +50,7 @@ async function registration() {
             email: email,
             password: password
         });
-        let res = await fetch('http://127.0.0.1:8080/user/register', {
+        let res = await fetch('https://carbonfootprinting1608.herokuapp.com/user/register', {
             method: 'POST',
             body: data,
             headers: {
@@ -62,10 +62,10 @@ async function registration() {
         if (res.status == 200){
             //console.log('Success:', JSON.stringify(myJson));
             console.log("the status is "+res.status);
-            window.location="login.html";
+            window.location="https://carbonfootprinting1608.herokuapp.com/login.html";
         } else {
             console.log("the status is "+res.status);
-            window.location="error.html";
+            window.location="https://carbonfootprinting1608.herokuapp.com/error.html";
         }
     }
     catch(error){
@@ -84,7 +84,7 @@ async function login() {
             email: email,
             password: password
         });
-        await fetch('http://127.0.0.1:8080/user/login', {
+        await fetch('https://carbonfootprinting1608.herokuapp.com/user/login', {
             method: 'POST',
             body: data,
             headers: {
@@ -99,7 +99,7 @@ async function login() {
                 user_id=user._id;
                 console.log(user);
                 console.log(user_id);
-                window.location="success.html";
+                window.location="https://carbonfootprinting1608.herokuapp.com/success.html";
                 return user;
             });
     }
@@ -112,7 +112,7 @@ async function login() {
 async function add_Card(){
     try{
         let user_id = await fetchUserId();
-        let HOST_URL='http://127.0.0.1:8080/user/add_card/';
+        let HOST_URL='https://carbonfootprinting1608.herokuapp.com/user/add_card/';
         let URL = HOST_URL+user_id;
         console.log(user_id);
         let cardNumber = document.getElementById('cardNumber').value;
@@ -150,7 +150,7 @@ async function add_Card(){
 
 async function fetchCards(){
     let user_id = await fetchUserId();
-    let HOST_URL='http://127.0.0.1:8080/user/get_cards/';
+    let HOST_URL='https://carbonfootprinting1608.herokuapp.com/user/get_cards/';
     let URL = HOST_URL+user_id;
     console.log(URL);
     console.log(user_id);
@@ -186,7 +186,7 @@ async function update_details(){
         });
 
         let user_id = await fetchUserId();
-        let HOST_URL='http://127.0.0.1:8080/user/update_card/';
+        let HOST_URL='https://carbonfootprinting1608.herokuapp.com/user/update_card/';
         let URL = HOST_URL+user_id;
         let xhr = new XMLHttpRequest();
 
