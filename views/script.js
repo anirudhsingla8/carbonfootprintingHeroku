@@ -62,7 +62,7 @@ async function registration() {
         if (res.status == 200){
             //console.log('Success:', JSON.stringify(myJson));
             console.log("the status is "+res.status);
-            window.location="https://carbonfootprinting1608.herokuapp.com/login.html";
+            window.location="https://carbonfootprinting1608.herokuapp.com";
         } else {
             console.log("the status is "+res.status);
             window.location="https://carbonfootprinting1608.herokuapp.com/error.html";
