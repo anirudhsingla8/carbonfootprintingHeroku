@@ -2,40 +2,65 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://carbonfootprinting1608.herokuapp.com/success.js"></script>
     <script src="https://carbonfootprinting1608.herokuapp.com/script.js"></script>
+    <script src="https://carbonfootprinting1608.herokuapp.com/add_card_validation.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Add Card Details</title>
 </head>
 <body>
-<div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <div class="panel-group" style="padding-top: 12px;">
-            <div class="panel panel-primary" >
-                <div class="panel-heading"><h1>Add Card Details Here</h1></div>
-                <div class="panel-body">
-                    <form action="" method='post'>
-                        <div class="form-group">
-                            <input type="text" placeholder="Card Number" class="form-control" id="cardNumber">
+    <div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="https://carbonfootprinting1608.herokuapp.com">Carbon Footprint</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <h5 class="nav-link" id="name1"></h5>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://carbonfootprinting1608.herokuapp.com/success.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://carbonfootprinting1608.herokuapp.com">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <div class="panel-group" style="padding-top: 12px;">
+                        <div class="panel panel-primary" >
+                            <div class="panel-heading"><h1>Add Card Details Here</h1></div>
+                            <div class="panel-body">
+                                <form action="" method='post' name="add_card_form">
+                                    <div class="form-group">
+                                        <input type="number" placeholder="Card Number" class="form-control" id="cardNumber" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" placeholder="enter CVV" class="form-control" id="CVV" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" placeholder="Enter expiry year" class="form-control" id="expiryYear" required>
+                                    </div>
+                                    <button type="button" id="register_button" onclick="add_Card()" class="btn btn-info">Add Card</button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="enter CVV" class="form-control" id="CVV" >
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Enter expiry year" class="form-control" id="expiryYear">
-                        </div>
-                        <button type="button" id="register_button"  onclick="add_Card();" class="btn btn-info">Add Card</button>
-                    </form>
-
+                    </div>
+                </div>
+                <div class="col-md-4">
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="col-md-4"></div>
-
-
-</div>
 </body>
 </html>

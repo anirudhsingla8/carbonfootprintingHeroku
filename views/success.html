@@ -2,46 +2,86 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://carbonfootprinting1608.herokuapp.com/script.js"></script>
-    <meta charset="UTF-8">
+    <script src="https://carbonfootprinting1608.herokuapp.com/success.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
 </head>
 <body>
-    <div class="row">
-        <div class="col-md-4">
-            <button class="btn btn-secondary" onclick="window.location.href='https://carbonfootprinting1608.herokuapp.com/add_card.html'">Add new Card</button>
-            <button class="btn btn-secondary" onclick="window.location.href='https://carbonfootprinting1608.herokuapp.com/update_expense.html'">Update Expense</button>
-            <button class="btn btn-info" onclick="displayCards();">Fetch cards</button>
-            <button class="btn btn-info" onclick="fetchUserId();">Fetch user details</button>
-            <button class="btn btn-info" onclick="logOut();">LogOut</button>
-        </div>
-        <div class="col-md-4">
-            <div class="card-container" id="card-container"></div>
-        </div>
-        <div class="modal" id="myModal">
-            modal
-            <!--
-            <div class="modal-dialog" id="modal-dialog">
-                <div class="modal-content" id="modal-content">
-
-
-                    <div class="modal-header" id="modal-header">
-
-                    </div>
-
-                    <div class="modal-body" id="modal-body">
-                    </div>
-
-
-                    <div class="modal-footer" id="modal-footer">
-                    </div>
-
+    <div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="https://carbonfootprinting1608.herokuapp.com">Carbon Footprint</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <h5 class="nav-link" id="name"></h5>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://carbonfootprinting1608.herokuapp.com">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="logOut();">LogOut</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+        </div>
+
+        <div class="container" style="margin-top: 10px">
+            <div class="row">
+                <div class="col-md-2" >
+                    <div class="card" style="margin-top: 50px;margin-left: 0px;width: 180px;margin-bottom: 50px;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://carbonfootprinting1608.herokuapp.com/add_card.html">Add New Cards</a></li>
+                            <li class="list-group-item"><a href="https://carbonfootprinting1608.herokuapp.com/update_expense.html">Update Expense</a></li>
+                            <li class="list-group-item"><a href="#" onclick="displayCards();">Fetch Cards</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10" >
+                    <div class="card-container d-flex flex-wrap" id="card-container"></div>
+                </div>
+
             </div>
-            -->
         </div>
 
     </div>
+    <div>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="modal" id="myModal">
+                    modal
+                    <!--
+                    <div class="modal-dialog" id="modal-dialog">
+                        <div class="modal-content" id="modal-content">
+
+
+                            <div class="modal-header" id="modal-header">
+
+                            </div>
+
+                            <div class="modal-body" id="modal-body">
+                            </div>
+
+
+                            <div class="modal-footer" id="modal-footer">
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

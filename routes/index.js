@@ -5,13 +5,15 @@ module.exports = function (app,db) {
     // post request to create user registration details
     app.post('/user/register', (req, res) => {
         const body = req.body;
-        if (body && body.username && body.firstName && body.lastName && body.email && body.password && body.gender) {
+        if (body && body.firstName && body.lastName && body.email && body.password && body.gender) {
             const userDetails = db.collection(userProfiles);
+            // db.collection(userProfiles).createIndex( { email: 1}, { unique: true },{required:true} )
+            // db.collection(userProfiles).createIndex( { username: 2}, { unique: true },{required:true} )
             userDetails.insert({
                 firstName: body.firstName,
                 lastName: body.lastName,
                 gender: body.gender,
-                username: body.username,
+                //username: body.username,
                 email: body.email,
                 password: body.password,
                 cards: []
@@ -84,13 +86,14 @@ module.exports = function (app,db) {
             userDetails.updateOne(
                 updateObj,
                 {
-                    $push: {
+                    $addToSet: {
                         cards: {
                             card_number: body.card_number,
                             CVV: body.CVV,
                             expiryYear: body.expiryYear,
                             shopping: parseInt(body.shopping),
-                            food: parseInt(body.food)
+                            food: parseInt(body.food),
+                            travel: parseInt(body.travel)
                         }
                     }
                 }
@@ -147,6 +150,7 @@ module.exports = function (app,db) {
         const UserId = req.params.id;
         const shopping = parseInt(body.shopping);
         const food = parseInt(body.food);
+        const travel = parseInt(body.travel);
         const card_number = body.card_number;
         const userDetails = db.collection(userProfiles);
         if (body) {
@@ -159,7 +163,8 @@ module.exports = function (app,db) {
                 {
                     $inc: {
                         'cards.$.shopping': shopping,
-                        'cards.$.food': food
+                        'cards.$.food': food,
+                        'cards.$.travel': travel
                     }
                 }
             )

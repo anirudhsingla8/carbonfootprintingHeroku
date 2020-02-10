@@ -4,14 +4,14 @@ const routes = require('./routes/index.js');
 const session = require('express-session');
 const app = express();
 const router=express.Router();
-app.use(express.json())
+app.use(express.json());
 let sess;
 
 app.use(express.static("views"));
 //app.use('/static', express.static(path.join(__dirname, 'views')));
 
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname+'/login.html');
+    res.sendFile(__dirname+'/About.html');
 });
 
 //use sessions for tracking login
@@ -47,6 +47,7 @@ mongodb.MongoClient.connect(DB_URI, (error, dbClient) => {
 
     console.log('successfully connected to database instance');
     const database = dbClient.db('carbon-footprinting');
+    database.collection('user-profiles').createIndex( { email: 1 }, { unique: true },{required:true} );
     routes(app,database);
     app.listen(port, () => {
         console.log(`Server started at ${port}`);
